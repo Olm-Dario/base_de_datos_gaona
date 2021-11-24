@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+    font-family: 'Popponins', sans-serif;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(290deg, #f3ca5c 0, #e5cd5b 6.25%, #d5cd5b 12.5%, #c3cb5c 18.75%, #afc75e 25%, #9ac05f 31.25%, #85b761 37.5%, #6fac62 43.75%, #5a9f61 50%, #46915f 56.25%, #34865e 62.5%, #237b5d 68.75%, #10735d 75%, #006c5e 81.25%, #00675f 87.5%, #006361 93.75%, #006165 100%);
+}
+
+.container{
+  max-width: 700px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.container .title{
+  font-size: 25px;
+  font-weight: 500px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.container form .user-details{
+  display: grid;
+}
+
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details{
+  display: block;
+  font-weight: 500;
+  margin: 5px;
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 250px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #00675f;
+}
+
+form .button{
+  height: 35px;
+  width: 35px 0;
+}
+
+form .button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: linear-gradient(290deg, #f3ca5c 0, #e5cd5b 6.25%, #d5cd5b 12.5%, #c3cb5c 18.75%, #afc75e 25%, #9ac05f 31.25%, #85b761 37.5%, #6fac62 43.75%, #5a9f61 50%, #46915f 56.25%, #34865e 62.5%, #237b5d 68.75%, #10735d 75%, #006c5e 81.25%, #00675f 87.5%, #006361 93.75%, #006165 100%);
+}
+
+form .button input:hover{
+  background: linear-gradient(-290deg, #f3ca5c 0, #e5cd5b 6.25%, #d5cd5b 12.5%, #c3cb5c 18.75%, #afc75e 25%, #9ac05f 31.25%, #85b761 37.5%, #6fac62 43.75%, #5a9f61 50%, #46915f 56.25%, #34865e 62.5%, #237b5d 68.75%, #10735d 75%, #006c5e 81.25%, #00675f 87.5%, #006361 93.75%, #006165 100%);
+}
+
+
+

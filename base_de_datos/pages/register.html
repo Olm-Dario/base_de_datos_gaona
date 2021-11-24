@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../style/register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registro</div>
+        <form action="#" method="$_POST">
+            <!-- Radio botton -->
+            <div class="perfil-details">
+
+                <input type="radio" name="perfil" id="dot-1" value="persona">
+                <input type="radio" name="perfil" id="dot-2" value="empresa">
+
+                <span class="perfil-title">Tipo de Cliente</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="type">Persona Fisica</span>
+                    </label>
+
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="type">Persona Juridica</span>
+                    </label>
+                </div>
+            </div>
+
+           <!-- Datos de los input -->
+           <div class="user-details">
+                
+                <div class="input-box">
+                    <span class="details">DNI</span>
+                    <input type="number" placeholder="Ingresa tu DNI" id="dni" require>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">CUIT</span>
+                    <input type="text" placeholder="Ingresa tu CUIT" id="cuit" require>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Nombre</span>
+                    <input type="text" placeholder="Ingresa tu nombre" require>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Apellido</span>
+                    <input type="text" placeholder="Ingresa tu apellido" require>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Direccion</span>
+                    <input type="text" placeholder="Ingresa tu direccion" require>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Telefono</span>
+                    <input type="tel" placeholder="Ingresa tu telefono" require>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Ingresa tu email" require>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Cotraseña</span>
+                    <input type="password" placeholder="Ingresa tu contraseña" require>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Confirmar Cotraseña<a href=""></a></span>
+                    <input type="password" placeholder="Ingresa tu contraseña" require>
+                </div>
+
+            </div>    
+
+            <!-- Boton de Registrar -->
+            <div class="button">
+                <input type="submit" value="Registrar">
+            </div>
+        </form>
+    </div>
+
+    <!-- script de validacion del radio button-->
+    <script>
+        var dniInput = document.getElementById('dni');
+        var cuitInput = document.getElementById('cuit');
+        
+        // evento para el input radio del "si"
+        document.getElementById('dot-1').addEventListener('click', function(e) {
+            console.log('Vamos a habilitar el input text');        
+            dniInput.disabled = false;
+        });
+
+        // evento para el input radio del "no"
+        document.getElementById('dot-2').addEventListener('click', function(e) {
+            console.log('Vamos a deshabilitar el input text');
+            dniInput.disabled = true;
+        });
+
+
+
+        document.getElementById('dot-2').addEventListener('click', function(e) {
+            console.log('Vamos a habilitar el input text');        
+            cuitInput.disabled = false;
+        });
+
+        // evento para el input radio del "no"
+        document.getElementById('dot-1').addEventListener('click', function(e) {
+            console.log('Vamos a deshabilitar el input text');
+            cuitInput.disabled = true;
+        });
+
+      
+
+    </script>
+
+</body>
+</html>
